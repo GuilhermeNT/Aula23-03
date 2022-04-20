@@ -6,6 +6,7 @@ namespace Exercicio.Nove
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine(new Livro("Teste", "Teste", 99m).ToString());
             Console.ReadLine();
         }

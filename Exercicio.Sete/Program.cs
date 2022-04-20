@@ -18,6 +18,7 @@ namespace Exercicio.Sete
                 var dataNascimento = DateTime.Parse(Console.ReadLine());
 
                 Console.WriteLine(ObterMensagemFaixaEtaria(nome, dataNascimento));
+
             }
             catch (Exception ex)
             { 
@@ -34,11 +35,11 @@ namespace Exercicio.Sete
             var idade = DateTime.Today.Year - dataNascimento.Year;
 
             if (idade >= 60)
-                return $"Olá {nome}, está na faixa etário idoso!";
+                return $"Olá {nome}, esta na faixa etário idoso!";
             else if (idade >= 23 && idade <= 59)
-                return $"Olá {nome}, está na faixa etária Adulto";
+                return $"Olá {nome}, esta na faixa etária Adulto";
 
-            return $"Olá {nome}, está na faixa etária Jovem";
+            return $"Olá {nome}, esta na faixa etária Jovem";
         }
     }
 }
